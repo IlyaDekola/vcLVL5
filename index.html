@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>j11n</title>
+  <title>j11n — Твой совершенный карьерный путь</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -35,145 +35,139 @@
     .header{position:sticky;top:0;z-index:20;background:rgba(4,4,4,.82);backdrop-filter:blur(12px)}
     .header-inner{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
     .logo{display:flex;align-items:center;gap:12px;font-weight:800}
-    .logo-mark{width:124px;height:40px}
     .nav-actions{display:flex;gap:12px}
     .btn{min-height:52px;padding:0 22px;border-radius:14px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;transition:.2s ease}
     .btn-primary{background:var(--avocado);color:#fff}
     .btn-primary:hover{background:var(--avocado-hover)}
     .btn-secondary{background:#1a1d23;color:#fff;border:1px solid var(--border)}
     
-    /* HERO */
     .hero{padding:42px 0 46px}
     .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
     .trust-pill{display:inline-flex;align-items:center;gap:10px;padding:14px 14px;border:1px solid var(--border);background:#0b0e13;border-radius:999px;color:#d2d8e1;font-size:13px;line-height:1;margin-bottom:18px}
     .avatars{display:flex;align-items:center;margin-left:-12px;transform:translateY(1px)}
-    .avatars span{width:24px;height:24px;border-radius:50%;border:2px solid #0b0e13;background:linear-gradient(135deg,#d6e6f8,#8db7da);margin-left:-6px;flex:0 0 24px}
-    .avatars span:first-child{margin-left:0}
+    .avatars span{width:24px;height:24px;border-radius:50%;border:2px solid #0b0e13;background:linear-gradient(135deg,#d6e6f8,#8db7da);margin-left:-6px;flex:0 0 24px;background-size:cover;background-position:center;}
     
     h1{
-        font-size: clamp(2.2rem, 7vw, 5.2rem); 
-        line-height: 1.0;
-        letter-spacing: -0.05em;
-        margin-bottom: 20px;
-        font-weight: 800;
+        font-size:clamp(2.3rem, 6.5vw, 5.2rem);
+        line-height:1.0;
+        letter-spacing:-.05em;
+        margin-bottom:18px;
+        font-weight:800;
     }
     h1 .accent{color:var(--sky)}
     
     .hero p{
-        font-size: clamp(0.9rem, 2.5vw, 1.2rem); 
-        color: #d8dee6;
-        max-width: 45ch;
-        margin-bottom: 26px;
-        line-height: 1.4;
+        font-size:1.15rem;
+        color:#d8dee6;
+        max-width:42ch;
+        margin-bottom:26px;
+        line-height:1.4
     }
     
     .rating{display:flex;align-items:center;gap:10px;margin-top:24px;color:#d7dde5}
     .stars{color:var(--gold);letter-spacing:-1px;font-size:2.56rem;line-height:1;display:flex;align-items:center}
-    .hero-card{background:transparent;border:none;border-radius:0;padding:0;box-shadow:none}
     
-    /* ГЕНИЙ С ПРОЗРАЧНЫМИ КРАЯМИ */
-    .hero-image {
-      aspect-ratio: 4/4.5;
-      border-radius: 32px;
-      position: relative;
-      overflow: hidden;
-      background-size: cover;
-      background-position: center;
-      -webkit-mask-image: radial-gradient(circle, black 40%, transparent 95%);
-      mask-image: radial-gradient(circle, black 40%, transparent 95%);
+    .hero-image{
+        aspect-ratio:4/4.5;
+        border-radius:24px;
+        position:relative;
+        overflow:hidden;
+        background-size:cover;
+        background-position:center;
+        -webkit-mask-image: radial-gradient(circle, black 50%, transparent 98%);
+        mask-image: radial-gradient(circle, black 50%, transparent 98%);
     }
-    .hero-image::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at center, transparent 30%, var(--bg) 98%);
-      pointer-events: none;
-    }
-
-    /* ЛОГОТИПЫ */
-    .logos-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: clamp(15px, 3vw, 40px);
-      opacity: 0.8;
-      padding: 10px 0;
-    }
-    .logos-row div {
-      font-size: clamp(1.2rem, 3vw, 1.8rem);
-      font-weight: 800;
-      color: #818a94;
-      text-align: center;
-      letter-spacing: -.04em;
-      white-space: nowrap;
+    .hero-image:after{
+        content:'';
+        position:absolute;
+        inset:0;
+        background: radial-gradient(circle at center, transparent 40%, var(--bg) 98%);
+        pointer-events:none
     }
 
-    /* КАРТОЧКИ КАК ЭТО РАБОТАЕТ */
-    .title{font-size:clamp(2.3rem, 4vw, 4rem);line-height:1;letter-spacing:-.04em;text-align:center;margin-bottom:18px;color:var(--silver)}
+    .logos-row{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+        gap:clamp(20px, 4vw, 50px);
+        opacity:.95;
+        padding: 20px 0;
+    }
+    .logos-row div{
+        font-size:clamp(1.2rem, 3vw, 2rem);
+        font-weight:800;
+        color:#818a94;
+        text-align:center;
+        letter-spacing:-.04em;
+        white-space: nowrap;
+    }
+
+    .title{font-size:clamp(2.3rem,4vw,4rem);line-height:1;letter-spacing:-.04em;text-align:center;margin-bottom:36px;color:var(--silver)}
     .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-    .card{background:#111318;border:1px solid var(--border);border-radius:26px;overflow:hidden}
+    .card{background:#111318;border:1px solid var(--border);border-radius:26px;overflow:hidden;display:flex;flex-direction:column;}
     
-    .card-top {
-      height: 240px; 
-      background: linear-gradient(180deg,#171b22,#0f1116);
-      display: flex;
-      align-items: center; 
-      justify-content: center;
-      padding: 22px;
+    .card-top{
+        height:240px;
+        background:linear-gradient(180deg,#171b22,#0f1116);
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        padding:22px;
+        flex-shrink:0;
     }
     
     .card-body{
-      padding: 26px;
-      text-align: left;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
+        padding:26px;
+        flex-grow:1;
+        display:flex;
+        flex-direction:column;
+        gap:12px;
+        text-align:left;
     }
+    .card-body-header{display:flex;align-items:center;gap:12px}
     
-    .card-body-header {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 12px;
+    .num{
+        width:38px;
+        height:38px;
+        border-radius:12px;
+        font-size:1.4rem;
+        background:var(--sky);
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-weight:800;
+        color:#111;
+        flex-shrink:0;
     }
-
-    .num {
-      width: 38px;
-      height: 38px;
-      border-radius: 12px;
-      font-size: 1.4rem;
-      background: var(--sky);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 800;
-      color: #111;
-      flex-shrink: 0;
-    }
-    .card h3{font-size:1.8rem;}
+    .card h3{font-size:1.8rem; margin:0}
     .card p{color:#d1d7df}
 
-    /* ОСТАЛЬНЫЕ СТИЛИ */
     .mini-stack{width:100%;max-width:290px;background:#0c0f14;border:1px solid rgba(255,255,255,.06);border-radius:18px;padding:14px 0}
     .mini-stack div{position:relative;min-height:32px;border-radius:12px;border:none;background:transparent;margin-bottom:10px;display:block;padding:6px 14px 10px 38px;color:#dbe2ea;white-space:nowrap;font-size:.9rem;line-height:1.2}
     .mini-stack div::before{content:"";position:absolute;left:14px;top:50%;transform:translateY(-50%);width:16px;height:16px;border-radius:6px;border:1px solid rgba(255,255,255,.22);background:transparent}
     .mini-stack div:nth-child(2){background:linear-gradient(90deg,rgba(121,194,245,.18),rgba(139,170,99,.15));border:1px solid rgba(121,194,245,.24);border-radius:0;width:100%;}
     .mini-stack div:nth-child(2)::before{content:"✔";display:flex;justify-content:center;align-items:center;font-size:11px;color:#0b1118;background:var(--avocado);border:none}
-    .job-wrap,.salary-wrap{background:#0d1015;border:1px solid var(--border);border-radius:30px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+
+    .job-wrap,.salary-wrap{background:#0d1015;border:1px solid var(--border);border-radius:30px;padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-top:40px}
     .job-copy h2,.salary-copy h2{font-size:clamp(2.3rem,4vw,4rem);line-height:.98;letter-spacing:-.04em;margin-bottom:16px;color:var(--silver)}
-    .job-copy p,.salary-copy p{color:#d2d9e2;font-size:1.18rem;margin-bottom:24px;max-width:32ch}
+    .job-copy p,.salary-copy p{color:#d2d9e2;font-size:1.1rem;margin-bottom:24px;max-width:32ch}
+    
     .phone{max-width:430px;margin:0 auto;background:#0a0d12;border:1px solid rgba(255,255,255,.06);border-radius:30px;padding:16px}
     .phone-head{display:flex;justify-content:space-between;margin-bottom:12px;color:#dbe1e7}
     .job-item{background:#10141a;border:1px solid rgba(255,255,255,.06);border-radius:18px;padding:14px;margin-bottom:10px}
     .job-item strong{display:block;margin-bottom:6px}
     .chips{display:flex;gap:8px;flex-wrap:wrap}.chip{padding:5px 9px;border-radius:999px;background:#1a1e25;color:#d3dbe4;font-size:.8rem}
+
     .chart{height:440px;border-radius:24px;border:1px solid rgba(255,255,255,.05);background:linear-gradient(180deg,#0f1218,#090b0f);position:relative;overflow:hidden}
     .line{position:absolute;left:0;right:0;border-top:1px dashed rgba(255,255,255,.14)}
     .curve{position:absolute;inset:44px 30px 60px 30px}
     .badge{position:absolute;left:50%;bottom:20px;transform:translateX(-50%);background:rgba(139,170,99,.12);border:1px solid rgba(139,170,99,.24);color:#9fcb75;padding:14px 16px;border-radius:999px}
-    table{width:100%;border-collapse:collapse} th,td{padding:20px;border-bottom:1px solid rgba(255,255,255,.08);text-align:left} th{color:var(--silver)} .check{color:var(--avocado);font-weight:800;font-size:1.3rem}.cross{color:#727b86;font-size:1.3rem}
-    .footer{padding:70px 0 40px}.footer-grid{display:grid;grid-template-columns:1.3fr repeat(4,1fr);gap:28px}.footer h4{margin-bottom:12px;color:#fff}
+    
+    table{width:100%;border-collapse:collapse;margin-top:40px} th,td{padding:20px;border-bottom:1px solid rgba(255,255,255,.08);text-align:left} th{color:var(--silver)} .check{color:var(--avocado);font-weight:800;font-size:1.3rem}.cross{color:#727b86;font-size:1.3rem}
+    .faq{max-width:980px;margin:40px auto 0}.faq-item{background:#0f1217;border:1px solid var(--border);border-radius:18px;margin-bottom:12px;overflow:hidden}.faq-q{padding:24px;display:flex;justify-content:space-between;cursor:pointer}.faq-a{padding:0 24px 24px;color:#d0d8e2}
+    .footer{padding:70px 0 40px;border-top:1px solid var(--border);margin-top:60px}.footer-grid{display:grid;grid-template-columns:1.3fr repeat(4,1fr);gap:28px}.footer h4{margin-bottom:12px;color:#fff}.footer a,.footer p{display:block;color:#b9c3ce;margin-bottom:10px}
+
     @media (max-width:980px){.hero-grid,.grid-3,.job-wrap,.salary-wrap,.footer-grid{grid-template-columns:1fr}}
   </style>
 </head>
@@ -181,7 +175,7 @@
   <div id="landing" class="page active">
     <header class="header">
       <div class="container header-inner">
-        <a class="logo" href="#landing" style="font-size:48px; line-height:1; font-weight:800; letter-spacing:-0.04em; gap:2px; display:inline-flex; align-items:center;">
+        <a class="logo" href="#landing" style="font-size:48px; line-height:1; font-weight:800; letter-spacing:-0.04em; gap:2px; display:inline-flex; align-items:center; margin-left:4px;">
           <span style="color:#8DB7DA;">j</span><span style="color:#FFFFFF;">11</span><span style="color:#8BAA63;">n</span>
         </a>
         <div class="nav-actions">
@@ -192,14 +186,18 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero" style="padding-top: 10px;">
         <div class="container hero-grid">
           <div>
             <div class="trust-pill">
-                <div class="avatars">
-                    <span></span><span></span><span></span><span></span><span></span>
-                </div> 
-                Джин помог исполнить желания 1000+ людей
+              <div class="avatars">
+                <span style="background-image:url(https://pplx-res.cloudinary.com/image/upload/pplx_search_images/8a3790a2c50c04976393f843e38522e9f940086b.jpg)"></span>
+                <span style="background-image:url(https://pplx-res.cloudinary.com/image/upload/pplx_search_images/a40d1bd455e91a70606d7f6aad280f2dbd08f647.jpg)"></span>
+                <span style="background-image:url(https://pplx-res.cloudinary.com/image/upload/pplx_search_images/ef606838235d427b50846e9ef729783f1ebcad22.jpg)"></span>
+                <span style="background-image:url(https://pplx-res.cloudinary.com/image/upload/pplx_search_images/deadaa43c29961c1983e42bb6178ae257392e464.jpg)"></span>
+                <span style="background-image:url(https://pplx-res.cloudinary.com/image/upload/pplx_search_images/1a6f7a6934eae665722895bf4a7a07a2808edb14.jpg)"></span>
+              </div> 
+              Джин помог исполнить желания 1000+ людей
             </div>
             <h1>Построй свой<br><span class="accent" style="color: var(--sky);">совершенный</span><br>карьерный путь</h1>
             <p>Познай самого себя с помощью ИИ тестирования<br>на профориентацию вместе с Джином</p>
@@ -207,11 +205,12 @@
             <div class="rating"><span class="stars">★★★★★</span><span style="font-size:.8em;">4.8 из 5 на основе 100+ ваших отзывов</span></div>
           </div>
           <div class="hero-card">
-            <div class="hero-image" style="background-image:url('https://pplx-res.cloudinary.com/image/upload/pplx_search_images/8a3790a2c50c04976393f843e38522e9f940086b.jpg');"></div>
+            <div class="hero-image" style="background-image:url('data:image/png;base64,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AWUlwitzmJEcifWqASAiWZg22ZZKyzDeSEhF6R9kg2rPVN55TsfGXj1Sl97FgBuN9eZcSOPQs+qGzJeBtXlum+iRogCNposC+CNj8ItWFB8BIVKVbIdgZGObrUdmwcO+Q9zvy2vqzGfTd/Gp3vjzcSn69GQ7mbJRUH34nS8NmhRSrOwp0rgpJq88HNFGop9DDEBnsNPXJPxI6j0GR4NnOYQ9rBOl5uwtgePxGIFq3fCjH9T7p9+mA/79vPDQ980p/Z5G4vNq7PTh4+eX77p7W7XfI+377Y5p9Xm9ObN68v9m7G776/beD9et96vKToK6X2/Xp6fVrv2S5q3S5W87PzlS9uLwaRxsS9p9i3+7X602XpSTKq6vT43GZ5vnyclmU0XW567re3L59u9vtxnH07W63O6pSVVWqZhmHMmYpq0XU9/1SyiSpiKiq9LptO++97/u+6zZVVdV1p6enS5S6U8ZxjOis7Dbt+uX96fOn7fKSlW6ZUn9/9fSnd88+8G683057e93X+7tYVunKst/2+9Ph5v60O5wPyf388pPrL7/6u69//+pTf/t8G9vGfHl+mZ88863f6pM/6zN+32K918W3pU3n++f7f08pS4DHeP+Ojx+/X979eP/tH361/fjrH5dfX9728f73f8A/fuC3HzYfIuO++Pjh/p9/vL17X8vTh9P9/tS9uF9ffPPrXz9+8clHnz3/8Pnzl7vz66ubm9u7+y9/6T89P/344f6f799+vO3n+0M73V62Z+8P96fjvUf97vz9l69fnT/95PL00/Xm+Yv7f35/8/UfPr78P/78808vz998/tVXr18+P796+vLp6+uT7W/Xl5dPn7+5vr6+vL7Z37/eX99vXn/z5puvX798/fL69auXrz59uv9y+X89v//m86vPf//m8q/++POnL//+9atPn7/88vOnL19evvz66vLls/PL5/v9589ffP7yxenZ/vn9/v9/6ZevX755/eL69v9l69uX1+8vL9uXl+tN+6+vb5+/fPXyyzYul6f91fXtzZvLy9f9/vr6+v7p05vXLy8vr66vr/vL66tXHz65uT68uLp6fX37+vNfXl1dP3/95ebZp9vT069fv//it/Zvv9mO423fr9v28uXLly9fnl9uNptN6v6Y+m0b++t+v799e/ny1asvfnk67W5/fLp/uD0e9/u97e7/88uXf/Lz65eXf/n5l/s9p9/m8/P97e3zV5vLy9fPrl+vrp/v7/fnZ+v+5XJ/Xq6X/f78/HK9v9+fnp9f3X63vbi6vHx2dXW1OTk5PT3dLstFSlGqqkrT6XTqV0vXdV3Xdcl/9398/vLp5vP9fjndp67rXqZpv9/f337Zf7l+fnW5Xn92fn5+uXy5XvfjvMzv2/O+99Xl8uXTl5eXf3Z7f7V/fjrX8+X+ftmP+/P9fX+1H/fl+uXfvb7f9999/vr66vqLp/ub/f70+ubZ5fP9/f7p6urLp0+fnv7F8fP9Zf8PHz8+fvx8f/705fPXp+evLq8+v369Wb9eXl2unl9t1puUuq7v++36stxSXV+f1ovT6clmvXm2OdmePr98ub+8vNwe9vvLy91uvXm2WRV3O3n2/Prq8vLp6cvLy2fXp9PxYn969unZszf9ff/u69/e/PTfPX/56f7u6m7fL9fL9fVyPXY3T/t+nL++v9/P88fL/fH+9Pj0cX91/3L/eN8e9+M+zsu+PT9dr9uX+9On69Pr0784Pr9+9Wp7etfH7vT0fLrZf3Z+frX97PT66vRs/Xp7uTnbXm7ON6fD6XTpuv78+f78fDnfnW5uT7f70+1uu9vudpuXm6er3e7mdLi4OT9/fn76dHt68/zs5v7pcrfd7Tdv3r65unr2dHv78fb6eLzbnZ5vTofbu/Pz5/vXl/vd6fb2dLvb7febbdufP3/54YfPrl6/vL6+/uI3X3zx5Uu3L9vY3/b9uv/q6v/L7vXp6en2dLvb7XfLsnXdu7vLsmzH4/F0OqWU6rruuq7runEc75/eT6fTNE1d16WcUsYp5ZS7ruuaX3jYm9mY0mIcc78r9VIdp9VqtTo9XW/W2+0w7E7DfqjjMGpS1/f9OIy9SFlSInA69X7V6zB0u66XUnLKV6tVyrB1WbH6fJmXvGZ3lS4h7Pfu7uGzJ4+f/OiTH33v9PT86Xp9drp5evbu9PTuO3dv3r759ttvffC97/7m03fenU4fPHz60eWzT6f9+XR4vHt4tBvX6/fOf/z8A53L86f7H31899FpG7fj/ubZ5dXzly+fv3z6+atPv/ryy8+fPj87Oz9/efns/PLZ5fP9/uV6vb97fnW5Xf/Z5Xp9enX5bP3Z+fnV5f78vF6f99ev9+vL9bofp2fPr6/P9pvr/erZZv3Z6fXLZ8++ePbx9vS0Pzs9vX779O7p6frvDpdXp1fXz66efbr97PT8fPv07Oz0+unZ06dfvHjx5On+fLv/+v786fXzL08f/+Tx9uPt+X/O718ej789/ubm7c3p79H/mX/VfvT+299f0/+9f9X+G36/6/W/7S/f4uXf/+u7H/78z8v/4785fPv8S7scN8vDbu3O09fLdPf5X/2f/vU/fXz2yUvV+9OHT063Z6ebH3z88bNnz59vP9nuTrfnv/o8f/Z0f/H8yYuzD5+9/Pr6q6+fPXnx/MVHF+fPr84vL86fnV+un51dXW7PT8/W588vLjdnp5v95vnV/sWzj6/2H18+e37x7E+efPzzjx89f/6Ty/P/P7m+vn+9rX/99Y9fP9+v7y92n33Yf+Yv/85/+Wd//rMLp7pUuf2p9f727vbt58unl8+vX78+f/7Z51eX+/vz5fPzL65u9tvt8+vD9frV6fnL09Pr06d/fnp9evXiyYv987Ozp+f95uX62frVvlyfPzs9u3j69HT98uXzL1+fPn+5ff7Zkxcfn559/I9vH1//9Y9///969P6PbTjYqf7pL/v9V/N3v9z7D+7+3p7f8Xj7pY27/W4Yh93U0zDsf7Zdn15svvUv/+r69C967X3v2p5uL7fT9vzs6uWLL66vL/vtdhxuP7l88YOnTz97un6yP7xY9YvF0D97vj7fbu9OT26vT08uT7unZ+PZ05/85X/7b//23/5P//y/++GzXz59/uT05PL07HS73e93+8fD6enZqelYhV3OnFq697vVevNse3Gx3e9v9of7m7vNdrN89uz8fDs9P79989nt9uay79vV9mR1uT3fPT07+/STZ+unp8++dfbWdzZvrfI2L7/v2p69/Yq//Lw/u7m42vX9vF7f99unf/zz9X/88NnPvzxcf9Tnz0Y9fPTidvvm+unpxer89OZyYx79V588+unPL282L7/u+Xw+jFvA7p23W0Gv7O64u2U82P7p8vLp06eXl7vHj5f9frvfv3zxYt+3/f7Y9vO8vXp5vN2e7nZXP3/59PnL1+eXHz87PZtP8z6v8/z4uO9vX78cxtuL9eYyDOP5m7fn97e3X15fffnq9V//9evL67evv/zi1cuvbu8+789un21uH9//w0X9s9PT8zZ/p9/vL07XF9unHz4/P3/z+fMvXn7256v99vH2fD9fT8/X0+0H++ubz968XF+9PtzfDIdP/6P7T9fH63N7PAn729vbV5/fvvzicv/itJ1uD6f7m83l5WbY7a9evvzy5ZdXV09OTrp7f/L8+fP7p2+ubq6enj99evFiuX99fXX14unTp8PpdLttrZ2dPXn+/MWzZ8+enp2uT09PTm9vtrur5f70XNfbm+ur09Pt9unF4fL88vLF8+cvXr25efX61cvXV7evX79+/YOnT98+2W7PtufPXzx/9mS1Xp+vV9uTrbe7m/v759uT1eb05PTp06fbp5vN9vT89HR9urq8XF1cnG3Ot9vV+Wazunp6fr4+XW03u/X66eXZxeZ0c7p++vTJzempfXN1vdk9uTxdn6xOTre7S66urvbb3XqzPtueb86ubm6vt9vN6frZ9vToS9X9Yv96uH+9un++uR8PDyeb+7PtZtztj9vL9fK0X5+sbp5vd08vX19vbvbj+vTo6ZMXV4er/cvD+fPz7X69PtvevN6en3XNdf/y8vLyenNxsT+72Zxv9pvL9eXmZnW+ubm8XF1eXF5fX11drS4vL3f7/fX19f7mfv9yt99fXV9fXp92++3u9uzq7GZ9frE+u7q6unr7er999unDpz+8fPnh48f70+WyeP9+N+5O+/XFfXfbt/3+fL3b3+766eYq/f/Ye/Mky7Yrz6+L6M93980vMiMjI7IyM99896K6KmqAgAQIEEZ9VqOZYR76A7Z7f9EesT3NtkXWjO3ZkYedEQN6YMAA0YiqKqtKyvdfX59eR8REvM99T7IsS9H2YV2WIsS0SBlJKaXvU0q997KUpESUUpJ4D1W398N1D30eUn3yR1fL6v6p/+NlO0e3yvG6Xg9vX0y9r7q9PZ7yD++U3A/Vn72uT7zKj593M6WqY3fXl89pCqTCHMhU96Huj2H7B599T6fH59f9p/8A+n5O6v0K6688B7h99f0/+eP3uY0/I5L0FpEiIom8N/8P/u6f9z0/fXvBf/nf/+v9L98O6+0UuLp4C5Vq+Y67Syk6hEIdI/f6P3f/76L1f/H8y860U17zH4m7D/+e74Xv0O3Z/2U64f8Y6Sre4R0/9n1SgO7p3vH3A78vY633vTqGOfZpW3q/eX9/Pz4ZJmE7P6a9n1+A4pIn6XmY9l+77/4f//v/+9///V/fvn393/7v/+77P9/9796eN9/62p99vP38f/7T9p9e90/eGq+f5H7be7/mUuq79eXF+c3V/vzs2YvXp+/98T/8R794eXp5Y++vD08u/m0z866U7W5pZ022pT/X529vXp/Xm27KUpfVfLiaD7tptR66shmH4/G0WfXjtBuGXp9Vw+H2fH/I908vt8Nwtz/vDsM4jN7z8XQYh6GsD1fD0O8O6+G0XN1cn2+3G+/96vLy7Pr6enV7e3m2Onn89LTPunf+7PTp86uTbe/j9Wp1cnW2G3q9HHe7Xm6G9W5zfnX2/fXmcnV7en17ffmZ2fH67Pr27vT57em7N9tXj693p7XfXN7uNreXm8X3W6pZfXv38OnN689evXl7u9vunl9st88uP7vd7S9vT3fXm8v96Xv3T5/+pD/fPXp0tbm8fXp1unp3e7Y83NxeXW1unp0enp6d3969e7N99en18vT6eHe+3pxtX39+9/7N9fX27NnV+XfXm+vt7nx7enF2vNlsT7dn6+H5s+F6ff38av/0fLdffnb26Z/dXH/24tX77798993vf37+fHl9Xz6f3r7fP/7p/fPT18+fvv3Zl69+vlyv7W7bvXz35atXrz5fXm99v+76fLp7/PTm7u769v729ebT9ubN5fXp6enp6Xv3N58N5f7L57vtfrvbe3u8f/Ond9tPr95c7V99/uXfvb65vX62e7379f8yffH25S/69v7m/v7u9vb++fP7F8fL8Xh5vHz8ePv8/v7m5X53/v7N5fG8vr56u7m/eXv1dnv/6vT65uL+7vXz8f7F9fXp9vnV9et9vX91fPrF68PT87O7m+X07PzD09XHz6/efP7yzZs3N5vXn9/fXt8+vdzff3b78fX98ZfL4eXj6eX78vB8ub+/u77p7+9fX9+8fP7Z5+f3X/v1N7u/PZ9enp08fvz5s9PL68u7N99++fN/vX999/T85fX1y6/96X/8+tN/fHz2yeXm/fP7z7/8/P7z69e/uDtf/8nLz37+H7//8WdfXn/6m9urV/fXN/fXrx63v7X706vHr3///of/7T989/P/+O8+Pz/7/fX1XfdfPr/40/e/P9x88Xp9evXpPz77+O8v6599fr59dPrZ5fD68f0vXr97vL5+/fLz7ZffXt/+5tOfvXz3N5fDly+frz97/fkv3nz28f2Xb/fPfvrZ5evH05fvL1+fDp+/eX39V1/8+v789X738f6H/8f5Y8f3X3/x7rvv/97v/vbV6clvfvXzv3nz+uX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');"></div>
           </div>
         </div>
       </section>
 
+      <!-- LOGOS -->
       <section class="logos">
         <div class="container">
           <div class="logos-row">
@@ -220,6 +219,7 @@
         </div>
       </section>
 
+      <!-- HOW IT WORKS -->
       <section class="section">
         <div class="container">
           <h2 class="title">Как это работает?</h2>
@@ -274,7 +274,86 @@
           </div>
         </div>
       </section>
+
+      <!-- MATCH BOARD -->
+      <section class="section">
+        <div class="container job-wrap">
+          <div class="job-copy">
+            <h2>Ваш профессиональный match</h2>
+            <p>Собери свой собственный набор ролей, раскрывающих твой уникальный потенциал</p>
+            <a href="#quiz" class="btn btn-primary">Пройти тест</a>
+          </div>
+          <div class="phone">
+            <div class="phone-head"><span>9:41</span><span>Match Board</span><span>◔</span></div>
+            <div class="job-item"><strong>Junior Product Analyst</strong><div class="chips"><span class="chip">20% match</span><span class="chip">Analytics</span></div></div>
+            <div class="job-item"><strong>UX Research Assistant</strong><div class="chips"><span class="chip">60% match</span><span class="chip">Research</span></div></div>
+            <div class="job-item"><strong>Junior QA Engineer</strong><div class="chips"><span class="chip">65% match</span><span class="chip">Structure</span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SALARY -->
+      <section class="section">
+        <div class="container salary-wrap">
+          <div class="salary-copy">
+            <h2>Выбери свой будущий доход</h2>
+            <p>Узнай реальные зарплаты в Беларуси и планируй свой рост на 5 лет вперед.</p>
+            <a href="#quiz" class="btn btn-primary">Пройти тест</a>
+          </div>
+          <div class="chart">
+            <div class="line" style="top:20%; position:absolute; width:100%; border-top:1px dashed rgba(255,255,255,0.1)"></div>
+            <div class="line" style="top:50%; position:absolute; width:100%; border-top:1px dashed rgba(255,255,255,0.1)"></div>
+            <div class="curve" style="width: 100%; height: 100%; display: flex; align-items: flex-end; padding: 0 40px; justify-content: space-between;">
+                <div style="height: 30%; width: 50px; background: var(--sky); border-radius: 10px 10px 0 0;"></div>
+                <div style="height: 80%; width: 50px; background: var(--avocado); border-radius: 10px 10px 0 0;"></div>
+            </div>
+            <div class="badge">↗ +35% потенциал роста дохода</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPARISON -->
+      <section class="section">
+        <div class="container">
+          <h2 class="title">Джин vs обычные тесты</h2>
+          <table>
+            <thead><tr><th>Функции</th><th><span style="color:#8DB7DA;">j</span><span style="color:#FFFFFF;">11</span><span style="color:#8BAA63;">n</span></th><th>Обычные тесты</th></tr></thead>
+            <tbody>
+              <tr><td>Карьерные рекомендации</td><td class="check">✓</td><td class="check">✓</td></tr>
+              <tr><td>Карта личности (ИИ)</td><td class="check">✓</td><td class="cross">✕</td></tr>
+              <tr><td>Аналитика рынка РБ</td><td class="check">✓</td><td class="cross">✕</td></tr>
+              <tr><td>Пошаговый план</td><td class="check">✓</td><td class="cross">✕</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section">
+        <div class="container">
+          <h2 class="title">FAQ</h2>
+          <div class="faq">
+            <div class="faq-item"><div class="faq-q"><span>Это подходит новичкам?</span><span>⌄</span></div></div>
+            <div class="faq-item"><div class="faq-q"><span>Сколько длится тест?</span><span>⌄</span></div></div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+            <a class="logo" href="#landing" style="font-size:32px; font-weight:800;">
+                <span style="color:#8DB7DA;">j</span>11<span style="color:#8BAA63;">n</span>
+            </a>
+            <p style="margin-top:14px">Помогаем найти призвание в современном мире.</p>
+        </div>
+        <div><h4>Продукт</h4><a href="#quiz">Тест</a><a href="#">Методология</a></div>
+        <div><h4>Ресурсы</h4><a href="#">Блог</a><a href="#">Отзывы</a></div>
+        <div><h4>Инструменты</h4><a href="#">Зарплаты</a><a href="#">Вакансии</a></div>
+        <div><h4>Юридические</h4><a href="#">Privacy</a><a href="#">Terms</a></div>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
