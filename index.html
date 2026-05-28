@@ -6,7 +6,7 @@
   <title>j11n</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg:#040404;
@@ -24,7 +24,7 @@
       --shadow:0 18px 40px rgba(0,0,0,.28);
     }
     *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:'Manrope',sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+    body{font-family:'Roboto',sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
     a{text-decoration:none;color:inherit}
     img,svg{display:block;max-width:100%}
     button{font:inherit;border:none;cursor:pointer}
@@ -66,7 +66,7 @@
     .card{background:#111318;border:1px solid var(--border);border-radius:26px;overflow:hidden}
     .card-top{min-height:240px;background:linear-gradient(180deg,#171b22,#0f1116);display:flex;align-items:center;justify-content:center;padding:22px}
     .card-body{padding:26px}
-    .num{width:38px;height:38px;border-radius:12px;font-size:1.4rem;background:var(--avocado);display:flex;align-items:center;justify-content:center;font-weight:800;color:#111;margin-bottom:16px}
+    .num{width:38px;height:38px;border-radius:12px;font-size:1.4rem;background:var(--avocado);display:flex;align-items:center;justify-content:center;font-weight:800;color:#111;margin-bottom:12px}
     .card h3{font-size:1.8rem;margin-bottom:10px}
     .card p{color:#d1d7df}
     .mini-stack{width:100%;max-width:290px;background:#0c0f14;border:1px solid rgba(255,255,255,.06);border-radius:18px;padding:14px 0}
@@ -75,34 +75,34 @@
     .mini-stack div:nth-child(2){background:linear-gradient(90deg,rgba(121,194,245,.18),rgba(139,170,99,.15));border:1px solid rgba(121,194,245,.24);border-radius:0;width:100%;}
     .mini-stack div:nth-child(2)::before{content:"✔";display:flex;justify-content:center;align-items:center;font-size:11px;color:#0b1118;background:var(--avocado);border:none}
     .job-wrap,.salary-wrap{background:#0d1015;border:1px solid var(--border);border-radius:30px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
-    .job-copy h2,.salary-copy h2{font-size:clamp(2.3rem,4vw,4rem);line-height:.98;letter-spacing:-.04em;margin-bottom:16px;color:var(--silver)}
-    .job-copy p,.salary-copy p{color:#d2d9e2;font-size:1.18rem;margin-bottom:24px;max-width:32ch}
+    .job-copy h2,.salary-copy h2{font-size:clamp(2.3rem,4vw,4rem);line-height:1;letter-spacing:-.04em;margin-bottom:18px;color:var(--silver);text-align:left;font-weight:800}
+    .job-copy p,.salary-copy p{color:#d2d9e2;font-size:1.18rem;line-height:1.55;margin-bottom:24px;max-width:100%;text-align:justify;text-justify:inter-word;font-family:'Roboto',sans-serif}
     .phone{max-width:430px;margin:0 auto;background:#0a0d12;border:1px solid rgba(255,255,255,.06);border-radius:30px;padding:16px}
     .phone-head{display:flex;justify-content:space-between;margin-bottom:12px;color:#dbe1e7}
     .job-item{background:#10141a;border:1px solid rgba(255,255,255,.06);border-radius:18px;padding:14px;margin-bottom:10px}
     .job-item strong{display:block;margin-bottom:6px}
-    .chips{display:flex;gap:8px;flex-wrap:wrap}.chip{padding:5px 9px;border-radius:999px;background:#1a1e25;color:#d3dbe4;font-size:.8rem}
+    .chips{display:flex;gap:8px;flex-wrap:wrap}.chip{padding:5px 6px;border-radius:999px;background:#1a1e25;color:#d3dbe4;font-size:.8rem}
     .chart{height:440px;border-radius:24px;border:1px solid rgba(255,255,255,.05);background:linear-gradient(180deg,#0f1218,#090b0f);position:relative;overflow:hidden}
     .line{position:absolute;left:0;right:0;border-top:1px dashed rgba(255,255,255,.14)}
     .curve{position:absolute;inset:44px 30px 60px 30px}
     .badge{position:absolute;left:50%;bottom:20px;transform:translateX(-50%);background:rgba(139,170,99,.12);border:1px solid rgba(139,170,99,.24);color:#9fcb75;padding:14px 16px;border-radius:999px}
-    table{width:100%;border-collapse:collapse} th,td{padding:20px;border-bottom:1px solid rgba(255,255,255,.08);text-align:left} th{color:var(--silver)} .check{color:var(--avocado);font-weight:800;font-size:1.3rem}.cross{color:#727b86;font-size:1.3rem}
+    table{width:100%;border-collapse:collapse} th,td{padding:10px 3px;border-bottom:1px solid rgba(255,255,255,.08);text-align:left} th{color:var(--silver)} .check{color:var(--avocado);font-weight:800;font-size:1.3rem;text-align:center;}.cross{color:#727b86;font-size:1.3rem;text-align:center;}
     .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.review{background:#101317;border:1px solid var(--border);border-radius:20px;padding:22px}.review p{min-height:120px;color:#d7dde4}.meta{display:flex;justify-content:space-between;margin-top:18px}.faq{max-width:980px;margin:0 auto}.faq-item{background:#0f1217;border:1px solid var(--border);border-radius:18px;margin-bottom:12px;overflow:hidden}.faq-q{padding:24px;display:flex;justify-content:space-between}.faq-a{padding:0 24px 24px;color:#d0d8e2}
     .footer{padding:70px 0 40px}.footer-grid{display:grid;grid-template-columns:1.3fr repeat(4,1fr);gap:28px}.footer h4{margin-bottom:12px;color:#fff}.footer a,.footer p{display:block;color:#b9c3ce;margin-bottom:10px}
     .center{min-height:100vh;display:grid;place-items:center;padding:24px}.auth{width:min(520px,100%);background:#0f1318;border:1px solid var(--border);border-radius:30px;padding:34px}.auth h2{text-align:center;font-size:2rem;margin:18px 0 8px}.auth-sub{text-align:center;color:#cfd7e0;margin-bottom:20px}.warn{background:#eaf4fd;color:#4b78a8;border-radius:18px;padding:18px;margin-bottom:18px}.oauth{display:grid;grid-template-columns:1fr 1fr;gap:12px}.oauth button{min-height:56px;border-radius:16px;background:#171b22;color:#fff;border:1px solid rgba(255,255,255,.08)}.divider{display:flex;align-items:center;gap:12px;margin:18px 0;color:#8e98a3}.divider:before,.divider:after{content:'';flex:1;height:1px;background:rgba(255,255,255,.1)}.input{width:100%;min-height:58px;background:#171b22;border:1px solid rgba(255,255,255,.08);border-radius:16px;color:#fff;padding:0 18px;margin-bottom:14px}
     .quiz{display:grid;grid-template-columns:300px 1fr;min-height:100vh}.sidebar{background:#0a0d12;border-right:1px solid rgba(255,255,255,.08);padding:24px}.main{padding:32px}.progress{height:10px;background:#171b22;border-radius:999px;overflow:hidden;margin:18px 0 24px}.progress div{width:22%;height:100%;background:linear-gradient(90deg,var(--avocado),var(--avocado))}.chat{max-width:860px;margin:0 auto}.bubble{padding:18px 20px;border-radius:22px;max-width:80%;margin-bottom:14px}.ai{background:#11151c;border:1px solid rgba(255,255,255,.08)}.user{background:var(--avocado);margin-left:auto}.answers{display:grid;gap:12px;margin-top:28px}.answer{min-height:58px;border-radius:18px;background:#11151c;border:1px solid rgba(255,255,255,.08);color:#fff;padding:0 18px;text-align:left}
     @media (max-width:980px){.hero-grid,.grid-3,.job-wrap,.salary-wrap,.reviews,.footer-grid,.quiz{grid-template-columns:1fr}.logos-row{grid-template-columns:repeat(3,minmax(0,1fr))}.oauth{grid-template-columns:1fr}}
-  .card-body{display:flex;flex-direction:column;gap:12px;padding-top:0}.card-body-header{display:grid;grid-template-columns:48px 1fr;align-items:center;column-gap:8px;min-height:56px;width:100%}.card-body .num{margin:0;align-self:center;justify-self:start}.card-body-header h3{margin:0;line-height:1.05;display:flex;align-items:center;min-height:56px}.card-body p{width:100%;text-align:left}.mini-stack-title{margin:0 0 10px;font-size:.9rem;color:#dbe2ea}.mini-question{text-align:center;margin:0 0 14px;font-size:1.18rem;font-style:italic;color:#dbe2ea}.card-top{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;min-height:240px}
+  .card-body{display:flex;flex-direction:column;gap:12px;padding-top:0}.card-body-header{display:grid;grid-template-columns:44px 1fr;align-items:center;column-gap:2px;min-height:56px;width:100%}.card-body .num{margin:0;align-self:center;justify-self:start}.card-body-header h3{margin:0;line-height:1.05;display:flex;align-items:center;min-height:56px}.card-body p{width:100%;text-align:justify;text-justify:inter-word}.mini-stack-title{margin:0 0 10px;font-size:.9rem;color:#dbe2ea}.mini-question{text-align:center;margin:0 0 14px;font-size:1.18rem;font-style:italic;color:#dbe2ea}.card-top{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;min-height:240px}
     .card:first-of-type .card-body{padding-top:0;}
 
     .steps .card:first-of-type .card-body{padding-top:0;}
 
-    .job-copy h2{font-size:1.8rem;}
+    .job-copy h2{font-size:clamp(2.3rem,4vw,4rem);line-height:1;}
 
-    .job-copy{max-width:420px;}
-    .job-copy p{font-size:.95rem;line-height:1.4;}
+    .job-copy{max-width:560px;}
+    .job-copy p{font-size:1.18rem;line-height:1.55;font-family:'Roboto',sans-serif;text-align:justify;text-justify:inter-word;}
 
-  .compare-other{text-align:left;padding-left:32px;}
+  .compare-other{text-align:left;}
 .card-body-header .num{background:var(--sky);}
 .logos{margin-top:5px;}
 section.logos{padding-top:1px !important;}
@@ -114,6 +114,7 @@ section.logos{padding-top:1px !important;}
 .hero-main-cta{border-radius:10px;padding:0 26px;}
 @media (max-width:768px){.hero-main-cta{margin:0 auto;}}
 .hero-main-cta{font-size:1.25rem;}
+S0px !important;}
 </style>
 </head>
 <body>
@@ -121,7 +122,9 @@ section.logos{padding-top:1px !important;}
     <header class="header">
       <div class="container header-inner">
         <a class="logo" href="#landing" style="font-size:48px; line-height:1; font-weight:800; letter-spacing:-0.04em; gap:2px; display:inline-flex; align-items:center; margin-left:4px;">
-          <span style="color:#8DB7DA;">j</span><span style="color:#FFFFFF;">11</span><span style="color:#8BAA63;">n</span>
+          <span style="display:inline-block;position:relative;">
+        <span style="color:#8DB7DA;">j</span><span style="color:#FFFFFF;position:relative;display:inline-block;">11<span style="position:absolute;left:50%;bottom:-0.7em;transform:translateX(-50%);font-size:0.7em;font-weight:900;color:#FFFFFF;">⌣</span></span><span style="color:#8BAA63;">n</span>
+      </span>
         </a>
         <div class="nav-actions">
           <a href="#quiz" class="btn btn-primary">Пройти тест</a>
@@ -142,7 +145,7 @@ section.logos{padding-top:1px !important;}
 <span style="background-image:url(https://pplx-res.cloudinary.com/image/upload/pplx_search_images/1a6f7a6934eae665722895bf4a7a07a2808edb14.jpg); background-size:cover; background-position:center;"></span>
 </div> Джин помог исполнить желания 1000+ людей</div>
             <h1>Построй свой<br><span class="accent" style="color: var(--sky);">совершенный</span><br>карьерный путь</h1>
-            <p style="font-size: 1.1rem; line-height: 1.4; max-width: 42ch; margin-bottom: 26px;">Познай самого себя с помощью ИИ тестирования<br>на профориентацию вместе с Джином</p>
+            <p style="font-size: 1.1rem; line-height: 1.4; max-width: 42ch; margin-bottom: 26px;">Познай самого себя с помощью AI-тестирования<br>на профориентацию вместе с Джином</p>
             <a href="#quiz" class="btn btn-primary hero-main-cta">Загадай свое призвание</a>
             <div class="rating"><span class="stars">★★★★★</span><span style="font-size:.8em;line-height:1;display:flex;align-items:center;position:relative;top:4px">4.8 из 5 на основе 100+ ваших отзывов</span></div>
           </div>
@@ -164,24 +167,67 @@ section.logos{padding-top:1px !important;}
           
           
           <div class="grid-3">
-            <article class="card"><div class="card-top"><div style="margin-top:12px"><p class="mini-question">Что ты хочешь узнать?</p></div><div class="mini-stack"><div>Понять свои сильные стороны</div><div>Найти работу мечты</div><div>Получить пошаговый план</div></div></div><div class="card-body" style="padding-top:0"><div class="card-body-header step-1"><div class="num">1</div><h3>Пройди тест</h3></div><p>to do</p></div></article>
-            <article class="card"><div class="card-top"><div style="display:flex;gap:16px;margin-top:88px"><div style="width:88px;height:88px;border-radius:24px;background:linear-gradient(135deg,#ffcc8a,#79c2f5)"></div><div style="width:108px;height:108px;border-radius:30px;transform:rotate(45deg);background:linear-gradient(135deg,#fff0dc,#d6f0ff)"></div><div style="width:88px;height:88px;border-radius:24px;background:linear-gradient(135deg,#c9f2ff,#8baa63)"></div></div></div><div class="card-body" style="padding-top:0"><div class="card-body-header step-2"><div class="num">2</div><h3>Получи match</h3></div><p>to do</p></div></article>
-            <article class="card"><div class="card-top"><div style="margin-top:52px;text-align:center"><svg width="240" height="140" viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="120" cy="72" r="42" stroke="#2A2D34" stroke-width="18"/><circle cx="120" cy="72" r="42" stroke="#8BAA63" stroke-width="18" stroke-linecap="round" stroke-dasharray="224.3 39.6" transform="rotate(-90 120 72)"/><text x="120" y="80" text-anchor="middle" fill="#F3F3F1" font-size="24" font-weight="800">91%</text></svg><div style="margin-top:0px;font-size:16px;color:#d1d7df">Data Scientist</div></div></div><div class="card-body" style="padding-top:0"><div class="card-body-header step-3"><div class="num">3</div><h3>Действуй!</h3></div><p>to do</p></div></article>
+            <article class="card"><div class="card-top"><div style="margin-top:12px"><p class="mini-question">Что ты хочешь узнать?</p></div><div class="mini-stack"><div>Понять свои сильные стороны</div><div>Найти работу мечты</div><div>Получить пошаговый план</div></div></div><div class="card-body" style="padding-top:0"><div class="card-body-header step-1"><div class="num">1</div><h3>Пройди тест</h3></div><p>За 10 минут интерактивного общения AI определит твою зону интересов, поймет сильные и слабые стороны, раскроет личные предпочтения и природные таланты</p></div></article>
+            <article class="card"><div class="card-top"><div style="display:flex;gap:16px;margin-top:88px"><div style="width:88px;height:88px;border-radius:24px;background:linear-gradient(135deg,#ffcc8a,#79c2f5)"></div><div style="width:108px;height:108px;border-radius:30px;transform:rotate(45deg);background:linear-gradient(135deg,#fff0dc,#d6f0ff)"></div><div style="width:88px;height:88px;border-radius:24px;background:linear-gradient(135deg,#c9f2ff,#8baa63)"></div></div></div><div class="card-body" style="padding-top:0"><div class="card-body-header step-2"><div class="num">2</div><h3>Получи match</h3></div><p>Пойми, какие профессии лучше всего подходят именно тебе с помощью AI-тестирования и глубокого анализа современного рынка труда на основе миллионов данных</p></div></article>
+            <article class="card"><div class="card-top"><div style="margin-top:52px;text-align:center"><svg width="240" height="140" viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="120" cy="72" r="42" stroke="#2A2D34" stroke-width="18"/><circle cx="120" cy="72" r="42" stroke="#8BAA63" stroke-width="18" stroke-linecap="round" stroke-dasharray="224.3 39.6" transform="rotate(-90 120 72)"/><text x="120" y="80" text-anchor="middle" fill="#F3F3F1" font-size="24" font-weight="800">91%</text></svg><div style="margin-top:0px;font-size:16px;color:#d1d7df">Data Scientist</div></div></div><div class="card-body" style="padding-top:0"><div class="card-body-header step-3"><div class="num">3</div><h3>Действуй!</h3></div><p>Построй собственный карьерный путь в виде пошагового плана, опираясь на цифры из подтвержденных источников и поддержку AI</p></div></article>
           </div>
         </div>
       </section>
 
       <section class="section">
         <div class="container job-wrap">
-          <div class="job-copy"><h2>Ваш профессиональный match</h2><p>Собери свой собственный набор ролей, раскрывающих твой уникальный потенциал</p><a href="#quiz" class="btn btn-primary">Пройти тест</a></div>
-          <div class="phone"><div class="phone-head"><span>9:41</span><span>Match Board</span><span>◔</span></div><div class="job-item"><strong>Junior Product Analyst</strong><div class="chips"><span class="chip">20% match</span><span class="chip">Analytics</span></div></div><div class="job-item"><strong>UX Research Assistant</strong><div class="chips"><span class="chip">60% match</span><span class="chip">Research</span></div></div><div class="job-item"><strong>Project Coordinator</strong><div class="chips"><span class="chip">25% match</span><span class="chip">Communication</span></div></div><div class="job-item"><strong>Junior QA Engineer</strong><div class="chips"><span class="chip">65% match</span><span class="chip">Structure</span></div></div><div class="job-item"><strong>Content Strategist</strong><div class="chips"><span class="chip">30% match</span><span class="chip">Creativity</span></div></div></div>
+          <div class="job-copy"><h2 style="text-align:left;line-height:1.15">
+<span style="white-space:nowrap">Ваш профессиональный</span><br>match
+</h2><p>Получи инсайты с рынка труда и собери свой личный топ профессий, раскрывающих твой уникальный потенциал</p><a href="#quiz" class="btn btn-primary">Пройти тест</a></div>
+          <div class="phone"><div class="phone-head"><span>12:31</span><span>Match board</span><span style="display:inline-flex;align-items:center;gap:6px"><svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Battery 83 percent"><rect x="1" y="1" width="20" height="10" rx="2.5" stroke="#E8EEF7" stroke-width="1.5"/><rect x="22" y="4" width="2" height="4" rx="1" fill="#E8EEF7"/><rect x="2.5" y="2.5" width="15.35" height="7" rx="1.5" fill="#8BAA63"/></svg><span style="font-size:12px;color:#dbe1e8">83%</span></span></div><div class="job-item"><strong>Продуктовый аналитик</strong><div class="chips"><span class="chip" style="background:#22c55e;color:#111;font-weight:600;font-size:0.95rem">67% match</span><span class="chip">Аналитика</span></div></div><div class="job-item"><strong>Специалист по кибербезопасности</strong><div class="chips"><span class="chip" style="background:#f5c84b;color:#111;font-weight:600;font-size:0.95rem">53% match</span><span class="chip">Информационная безопасность</span></div></div><div class="job-item"><strong>Менеджер проектов</strong><div class="chips"><span class="chip" style="background:#22c55e;color:#111;font-weight:600;font-size:0.95rem">78% match</span><span class="chip">Менеджмент</span></div></div><div class="job-item"><strong>Фармацевт</strong><div class="chips"><span class="chip" style="background:#e74c3c;color:#111;font-weight:600;font-size:0.95rem">11% match</span><span class="chip">Медицина</span></div></div><div class="job-item"><strong>Сварщик</strong><div class="chips"><span class="chip" style="background:#f5c84b;color:#111;font-weight:600;font-size:0.95rem">38% match</span><span class="chip">Реальный сектор</span></div></div></div>
         </div>
       </section>
 
       <section class="section">
         <div class="container salary-wrap">
-          <div class="salary-copy"><h2>Выбери свой будущий доход с умом</h2><p>To Do</p><a href="#quiz" class="btn btn-primary">Пройти тест</a></div>
-          <div class="chart"><div class="line" style="top:16%"></div><div class="line" style="top:32%"></div><div class="line" style="top:48%"></div><div class="line" style="top:64%"></div><div class="line" style="top:80%"></div><div class="curve"><svg viewBox="0 0 1000 500" preserveAspectRatio="none"><defs><linearGradient id="curveGradient" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#79C2F5"/><stop offset="55%" stop-color="#8ED1F7"/><stop offset="100%" stop-color="#8BAA63"/></linearGradient></defs><path d="M40 430 C 150 290, 230 210, 390 180 S 650 205, 760 150 S 900 70, 955 30" stroke="url(#curveGradient)" stroke-width="12" fill="none" stroke-linecap="round"/></svg></div><div style="position:absolute;left:24px;bottom:22px;color:#d9e0e8">Твой доход сегодня</div><div style="position:absolute;right:24px;top:70px;color:#d9e0e8;text-align:right;max-width:140px">Твой доход через 5 лет</div><div class="badge">↗ +35% potential income growth</div></div>
+          <div class="salary-copy"><h2 style="text-align:left;line-height:1.15"><span style="white-space:nowrap">Выбирай профессию</span><br>с умом</h2><p>Прогнозируй свой доход на основе реальных данных рынка труда из подтвержденных источников</p><a href="#quiz" class="btn btn-primary">Пройти тест</a></div>
+          <div class="chart"><div class="line" style="top:16%"></div><div class="line" style="top:32%"></div><div class="line" style="top:48%"></div><div class="line" style="top:64%"></div><div class="line" style="top:80%"></div><div class="curve"><svg viewBox="0 0 1000 500" preserveAspectRatio="none"><defs><linearGradient id="curveGradient" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#4A90E2"/><stop offset="50%" stop-color="#00E676"/><stop offset="100%" stop-color="#2E7D32"/></linearGradient><marker id="arrowhead" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+<path d="M0,0 L0,6 L6,3 Z" fill="#2E7D32"/>
+</marker></defs><path d="M40 430 C 120 425, 200 415, 250 400 C 350 280, 500 160, 650 100 C 780 60, 880 35, 955 15" stroke="url(#curveGradient)" stroke-width="12" fill="none" stroke-linecap="round" marker-end="url(#arrowhead)"/></svg></div>
+
+<div style="position:absolute; left: 20px; top: 253px;       color:#d9e0e8;font-size:13px;max-width:110px;line-height:1.3">твой доход сейчас</div>
+<div style="position:absolute;left:130px;top:253px;color:#d9e0e8;font-size:12px;max-width:140px;text-align:center;line-height:1.3">ты обратился<br>к Джину</div>
+<svg style="position:absolute;left:133px;top:226px;width:40px;height:40px;pointer-events:none" viewBox="0 0 40 40">
+  <defs>
+    <marker id="arrowPointer" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 Z" fill="#d9e0e8"/>
+    </marker>
+  </defs>
+  <line x1="28" y1="38" x2="8" y2="4" stroke="#d9e0e8" stroke-width="1.5" stroke-dasharray="3,3" marker-end="url(#arrowPointer)"/>
+</svg>
+<svg style="position:absolute;left:250px;top:123px;width:40px;height:40px;pointer-events:none" viewBox="0 0 40 40">
+  <defs>
+    <marker id="arrowPointerSon" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 Z" fill="#d9e0e8"/>
+    </marker>
+  </defs>
+  <line x1="28" y1="38" x2="8" y2="4" stroke="#d9e0e8" stroke-width="1.5" stroke-dasharray="3,3" marker-end="url(#arrowPointerSon)"/>
+</svg>
+<div style="position:absolute;left:220px;top:150px;color:#d9e0e8;font-size:12px;max-width:150px;text-align:center;line-height:1.3">сын маминой подруги</div>
+<svg style="position:absolute;left:390px;top:15px;width:40px;height:40px;pointer-events:none" viewBox="0 0 40 40">
+  <defs>
+    <marker id="arrowPointer5Years" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 Z" fill="#d9e0e8"/>
+    </marker>
+  </defs>
+  <line x1="12" y1="4" x2="32" y2="38" stroke="#d9e0e8" stroke-width="1.5" stroke-dasharray="3,3" marker-end="url(#arrowPointer5Years)"/>
+</svg>
+<div style="position:absolute;left:360px;top:12px;color:#d9e0e8;font-size:12px;max-width:150px;text-align:center;line-height:1.3">твой доход через 5 лет</div>
+<svg style="position:absolute;left:890px;top:15px;width:40px;height:40px;pointer-events:none" viewBox="0 0 40 40">
+  <defs>
+    <marker id="arrowPointer5Years" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 Z" fill="#d9e0e8"/>
+    </marker>
+  </defs>
+  <line x1="28" y1="38" x2="8" y2="4" stroke="#d9e0e8" stroke-width="1.5" stroke-dasharray="3,3" marker-end="url(#arrowPointer5Years)"/>
+</svg>
+
+</div>
         </div>
       </section>
 
@@ -189,18 +235,25 @@ section.logos{padding-top:1px !important;}
         <div class="container">
           <h2 class="title">Джин vs обычные карьерные тесты</h2>
           <table>
-            <thead><tr><th></th><th><span style="color:#8DB7DA;">j</span><span style="color:#FFFFFF;">11</span><span style="color:#8BAA63;">n</span>
-        </th><th class="compare-other">Обычные карьерные тесты</th></tr></thead>
+            <thead>
+        <tr>
+          <th style="font-size:20px;font-weight:700"></th>
+          <th style="font-size:20px;font-weight:700;text-align:center;"><span style="display:inline-block;position:relative;">
+        <span style="color:#8DB7DA;">j</span><span style="color:#FFFFFF;position:relative;display:inline-block;">11<span style="position:absolute;left:50%;bottom:-0.7em;transform:translateX(-50%);font-size:0.7em;font-weight:900;color:#FFFFFF;">⌣</span></span><span style="color:#8BAA63;">n</span>
+      </span></th>
+          <th style="font-size:16px;font-weight:700;text-align:center">Обычные карьерные тесты</th>
+        </tr>
+      </thead>
             <tbody>
-              <tr><td>Карьерные рекомендации</td><td class="check">✓</td><td class="check">✓</td></tr>
-              <tr><td>Карта личности</td><td class="check">✓</td><td class="cross">✕</td></tr>
-              <tr><td>ИИ коучинг</td><td class="check">✓</td><td class="cross">✕</td></tr>
-              <tr><td>Match board</td><td class="check">✓</td><td class="cross">✕</td></tr>
-              <tr><td>Аналитика рынка</td><td class="check">✓</td><td class="cross">✕</td></tr>
-              <tr><td>Создание пошагового плана</td><td class="check">✓</td><td class="cross">✕</td></tr>
-              <tr><td>Смена профессии</td><td class="check">✓</td><td class="cross">✕</td></tr>
-              <tr><td>Подтвержденные источники</td><td class="check">✓</td><td class="cross">✕</td></tr>
-              <tr><td>Объяснимые результаты</td><td class="check">✓</td><td class="cross">✕</td></tr>
+              <tr><td>Карьерные рекомендации</td><td class="check j11n-column">✓</td><td class="check">✓</td></tr>
+              <tr><td>Аналитика рынка</td><td class="check j11n-column">✓</td><td class="cross">✕</td></tr>
+              <tr><td>Match board</td><td class="check j11n-column">✓</td><td class="cross">✕</td></tr>
+              <tr><td>AI-коучинг</td><td class="check j11n-column">✓</td><td class="cross">✕</td></tr>
+              <tr><td>Карта личности</td><td class="check j11n-column">✓</td><td class="cross">✕</td></tr>
+              <tr><td>Пошаговый план</td><td class="check j11n-column">✓</td><td class="cross">✕</td></tr>
+              <tr><td>Подтвержденные источники</td><td class="check j11n-column">✓</td><td class="cross">✕</td></tr>
+              <tr><td>Смена профессии</td><td class="check j11n-column">✓</td><td class="cross">✕</td></tr>
+              <tr><td>Понятные результаты</td><td class="check j11n-column">✓</td><td class="cross">✕</td></tr>
             </tbody>
           </table>
         </div>
@@ -212,32 +265,38 @@ section.logos{padding-top:1px !important;}
         <div class="container">
           <h2 class="title">FAQ</h2>
           <div class="faq">
-            <div class="faq-item"><div class="faq-q"><span>Это подходит, если я ещё не знаю, кем хочу быть?</span><span>⌄</span></div><div class="faq-a">Да. Первый модуль как раз создан для ситуации, когда нужно сначала понять направление, а не подтвердить уже готовый выбор.</div></div>
-            <div class="faq-item"><div class="faq-q"><span>Почему результату можно доверять?</span><span>⌄</span></div><div class="faq-a">Потому что продукт показывает причины совпадения, логику вывода и постепенно углубляет результат через следующие модули.</div></div>
+            <div class="faq-item"><div class="faq-q"><span>Это подойдет мне, если я еще не знаю, кем хочу быть?</span><span>⌄</span></div><div class="faq-a">Да, конечно! Джин создан для того, чтобы помочь лучше понять свое профессиональное направление и соотнести желаемое с реальностью вокруг.</div></div>
+            <div class="faq-item"><div class="faq-q"><span>Какие вопросы задаёт AI?</span><span>⌄</span></div><div class="faq-a">Про интересы, стиль мышления, отношение к людям, лидерству, деньгам, желаемому образу жизни и др.</div></div>
             <div class="faq-item"><div class="faq-q"><span>Сколько длится тест?</span><span>⌄</span></div><div class="faq-a">Бесплатный модуль рассчитан примерно на 10–12 минут, чтобы дать первый полезный результат без перегруза.</div></div>
-            <div class="faq-item"><div class="faq-q"><span>Какие вопросы задаёт AI?</span><span>⌄</span></div><div class="faq-a">Про интересы, стиль мышления, отношение к людям, стабильности, деньгам, лидерству и желаемому образу работы.</div></div>
+            <div class="faq-item"><div class="faq-q"><span>Почему результату можно доверять?</span><span>⌄</span></div><div class="faq-a">Потому что Джин показывает причины совпадений, объясняет логику принимаемых решений, подтверждает факты реальными данными с рынка труда, и последовательно формирует комплексный результат посредством погружения сквозь модули.</div></div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container footer-grid">
-        <div><a class="logo" href="#landing"><svg class="logo-mark" viewBox="0 0 140 48" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="snowGlow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(22 14) rotate(48) scale(42)"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.55" stop-color="#F4EDF9"/><stop offset="1" stop-color="#E7DCF3"/></radialGradient></defs><circle cx="24" cy="24" r="18" fill="url(#snowGlow2)" stroke="#D9CBEA"/><path d="M22.7 13H28.7V28.4C28.7 34.1 25.4 37 20 37H18.2V32H19.4C21.5 32 22.7 30.8 22.7 28.4V13Z" fill="#8DB7DA" stroke="#111111" stroke-width="0.9" stroke-linejoin="round"/><text x="52" y="30" fill="#FFFFFF" font-family="Manrope, sans-serif" font-size="24" font-weight="800">j11n</text></svg></a><p style="margin-top:14px">Помогаем понять, какая карьера подходит пользователю, и превращаем вывод в понятный маршрут входа.</p></div>
-        <div><h4>Career Tests</h4><a href="#quiz">Career Test</a><a href="#quiz">Career Path Test</a><a href="#quiz">AI Career Test</a></div>
-        <div><h4>Resources</h4><a href="#">Blog</a><a href="#">Reviews</a><a href="#">Salary Insights</a></div>
-        <div><h4>Tools</h4><a href="#">AI Career Path Generator</a><a href="#">Job Search</a><a href="#">Work Style Test</a></div>
-        <div><h4>Legal</h4><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+    <footer style="padding:30px 40px;border-top:1px solid #333;text-align:center;">
+    <div style="max-width:800px;margin:0 auto;">
+      <!-- Юридический текст - 3 строки -->
+      <div style="font-size:12px;color:#888;line-height:1.8;margin-bottom:12px;">
+        AI-консультант предоставляет рекомендации информационного и развлекательного характера.<br>
+        Результаты не гарантированы. Услуга предназначена для лиц 18+.<br>
+        Оплата означает согласие с условиями <a href="https://d2z0o16i8xm8ak.cloudfront.net/offer" style="color:#8DB7DA;text-decoration:none;" target="_blank">Договора-оферты</a>.
       </div>
-      <div class="container" style="margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.08);text-align:center;color:#aeb8c4">© 2026 <span style="color:#8DB7DA;">j</span><span style="color:#FFFFFF;">11</span><span style="color:#8BAA63;">n</span>
-        . All rights reserved.</div>
-    </footer>
+
+      <!-- Копирайт -->
+      <div style="font-size:19px;color:#666;">
+        © 2026 <span style="display:inline-block;position:relative;">
+        <span style="color:#8DB7DA;">j</span><span style="color:#FFFFFF;position:relative;display:inline-block;">11<span style="position:absolute;left:50%;bottom:-0.7em;transform:translateX(-50%);font-size:0.7em;font-weight:900;color:#FFFFFF;">⌣</span></span><span style="color:#8BAA63;">n</span>
+      </span>. Все права защищены.
+      </div>
+    </div>
+  </footer>
   </div>
 
   <div id="login" class="page">
     <div class="center">
       <div class="auth">
-        <div style="display:flex;justify-content:center"><a class="logo" href="#landing"><svg class="logo-mark" viewBox="0 0 140 48" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="snowGlow3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(22 14) rotate(48) scale(42)"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.55" stop-color="#F4EDF9"/><stop offset="1" stop-color="#E7DCF3"/></radialGradient></defs><circle cx="24" cy="24" r="18" fill="url(#snowGlow3)" stroke="#D9CBEA"/><path d="M22.7 13H28.7V28.4C28.7 34.1 25.4 37 20 37H18.2V32H19.4C21.5 32 22.7 30.8 22.7 28.4V13Z" fill="#8DB7DA" stroke="#111111" stroke-width="0.9" stroke-linejoin="round"/><text x="52" y="30" fill="#FFFFFF" font-family="Manrope, sans-serif" font-size="24" font-weight="800">j11n</text></svg></a></div>
+        <div style="display:flex;justify-content:center"><a class="logo" href="#landing"><svg class="logo-mark" viewBox="0 0 140 48" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="snowGlow3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(22 14) rotate(48) scale(42)"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.55" stop-color="#F4EDF9"/><stop offset="1" stop-color="#E7DCF3"/></radialGradient></defs><circle cx="24" cy="24" r="18" fill="url(#snowGlow3)" stroke="#D9CBEA"/><path d="M22.7 13H28.7V28.4C28.7 34.1 25.4 37 20 37H18.2V32H19.4C21.5 32 22.7 30.8 22.7 28.4V13Z" fill="#8DB7DA" stroke="#111111" stroke-width="0.9" stroke-linejoin="round"/><text x="52" y="30" fill="#FFFFFF" font-family="Roboto, sans-serif" font-size="24" font-weight="800">j11n</text></svg></a></div>
         <h2>Sign in to j11n</h2>
         <div class="auth-sub">Access your existing account.</div>
         <div class="warn">Warning: You have started a quiz. If you sign in into another account, you may lose your current progress. <a href="#quiz" style="text-decoration:underline">Click here to resume your quiz</a></div>
@@ -252,7 +311,7 @@ section.logos{padding-top:1px !important;}
   <div id="quiz" class="page">
     <div class="quiz">
       <aside class="sidebar">
-        <a class="logo" href="#landing"><svg class="logo-mark" viewBox="0 0 140 48" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="snowGlow4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(22 14) rotate(48) scale(42)"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.55" stop-color="#F4EDF9"/><stop offset="1" stop-color="#E7DCF3"/></radialGradient></defs><circle cx="24" cy="24" r="18" fill="url(#snowGlow4)" stroke="#D9CBEA"/><path d="M22.7 13H28.7V28.4C28.7 34.1 25.4 37 20 37H18.2V32H19.4C21.5 32 22.7 30.8 22.7 28.4V13Z" fill="#8DB7DA" stroke="#111111" stroke-width="0.9" stroke-linejoin="round"/><text x="52" y="30" fill="#FFFFFF" font-family="Manrope, sans-serif" font-size="24" font-weight="800">j11n</text></svg></a>
+        <a class="logo" href="#landing"><svg class="logo-mark" viewBox="0 0 140 48" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="snowGlow4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(22 14) rotate(48) scale(42)"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.55" stop-color="#F4EDF9"/><stop offset="1" stop-color="#E7DCF3"/></radialGradient></defs><circle cx="24" cy="24" r="18" fill="url(#snowGlow4)" stroke="#D9CBEA"/><path d="M22.7 13H28.7V28.4C28.7 34.1 25.4 37 20 37H18.2V32H19.4C21.5 32 22.7 30.8 22.7 28.4V13Z" fill="#8DB7DA" stroke="#111111" stroke-width="0.9" stroke-linejoin="round"/><text x="52" y="30" fill="#FFFFFF" font-family="Roboto, sans-serif" font-size="24" font-weight="800">j11n</text></svg></a>
         <div style="margin-top:18px;color:#cfd7e0">Module 1 — Quiz</div>
         <div class="progress"><div></div></div>
         <p style="color:#b9c4cf">Короткий AI-диалог, который собирает ключевые сигналы и приводит к первому career match.</p>
